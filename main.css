@@ -1,5 +1,69 @@
-body, .nav-link {
-  font: 18px Assistant;
+/* CONSTANTS
+ * primary font (serif): Assistant
+ * secondary font (serif): Playfair
+ * tertiary font: Prata
+*/
+
+* {
+  font: Assistant;
+  line-height: 1.2em !important;
+}
+
+h1 {
+  font-family: Prata, serif;
+}
+
+h2 {
+  font-family: Playfair Display SC, serif;
+}
+
+/* How could you do this with 1 selector instead of 3? */
+#events, #testimonials, #contact {
+  width: 100%;
+  padding: 20px 50px;
+}
+
+.subtitle {
+  text-align: center;
+  padding: 1em 0;
+}
+
+.container-body {
+  padding: 50px;
+}
+
+.btn:hover {
+  transform: translateY(-1px) !important;
+}
+
+/* Navbar */
+.navbar {
+  padding: 1em 2.5em;
+  background-color: transparent !important;
+  float: left; /* doesnt matter if left or right; the point is to make position "absolute" */
+  width: 100%;
+*}
+
+.navbar-brand {
+  font: 2em Playfair Display SC, serif;
+}
+
+.nav-link {
+  font: 1.5em Assistant;
+  font-weight: bold;
+}
+
+.nav-item {
+  margin-left: 1em;
+}
+
+.btn-transparent {
+  border: 1px solid white;
+  color: white;
+}
+
+.btn-transparent:hover {
+  color: white;
 }
 
 .body-text {
@@ -7,37 +71,19 @@ body, .nav-link {
   padding: 25px;
 }
 
-#events, #testimonials, #contact {
-  width: 100%;
-  padding: 50px;
+/* Testimonials */
+.test-container {
+  width: 45%;
+  display: flex;
 }
 
-.container-body {
-  margin: 0 10% 0 10%;
-  padding: 50px;
+.fb-container {
+  justify-content: flex-end;
 }
 
-.footer {
-  padding: 25px;
-}
-
-.form-block {
-  background-color: white;
-  margin: auto;
-  padding: 25px;
-  border-radius: 5px;
-}
-
-h1 {
-  font-family: Prata, serif;
-}
-
-h2, .navbar-brand {
-  font-family: Playfair Display SC, serif;
-}
-
+/* Landing */
 #landing {
-  background-image: url("https://goo.gl/yg8WgM");
+  background-image: url("assets/landing.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -52,14 +98,37 @@ h2, .navbar-brand {
   line-height: 0.5em;
 }
 
-.navbar {
-  padding: 15px 15px 15px 25px;
-}
-
 .section-header {
   background-color: white;
   border-bottom-width: 3px;
   border-bottom-color: #3e3e3e;
   border-bottom-style: solid;
   padding: 10px;
+}
+
+.ken-contact {
+  background-image: url("assets/ken2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  border-radius: 5px;
+  width: 100%;
+  height: 550px;
+}
+
+.footer {
+  padding: 25px;
+}
+
+.form-group {
+  margin-bottom: 1.5em;
+}
+
+label {
+  font-weight: bold;
+}
+
+.form-check-label {
+  font-weight: normal;
+  margin-left: 0.5em;
 }
