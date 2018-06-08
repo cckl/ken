@@ -17,10 +17,9 @@ h2 {
   font-family: Playfair Display SC, serif;
 }
 
-/* How could you do this with 1 selector instead of 3? */
-#events, #testimonials, #contact {
+.body-width {
   width: 100%;
-  padding: 20px 50px;
+  padding: 2em 5em;
 }
 
 .subtitle {
@@ -29,12 +28,55 @@ h2 {
 }
 
 .container-body {
-  padding: 50px;
+  display: flex;
+  padding: 2em;
 }
 
 .btn:hover {
   transform: translateY(-1px) !important;
+
 }
+
+.btn:active {
+  transform: translateY(1px) !important;
+}
+
+.body-text {
+  margin: 0 2em;
+  padding: 2em;
+}
+
+/* Landing */
+.landing-body {
+  display: flex;
+  flex-direction: column;
+  padding: 9em 2em;
+}
+
+.btn-transparent {
+  border: 1px solid white;
+  color: white;
+  flex-basis: 2em;
+  margin-right: auto;
+}
+
+.btn-transparent:hover {
+  background-color: white;
+  color: black;
+}
+
+#landing {
+  background-image: url("assets/landing.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+.landing-text {
+  color: white;
+  line-height: 0.5em;
+}
+
 
 /* Navbar */
 .navbar {
@@ -57,20 +99,6 @@ h2 {
   margin-left: 1em;
 }
 
-.btn-transparent {
-  border: 1px solid white;
-  color: white;
-}
-
-.btn-transparent:hover {
-  color: white;
-}
-
-.body-text {
-  margin: 0 10% 0 10%;
-  padding: 25px;
-}
-
 /* Testimonials */
 .test-container {
   width: 45%;
@@ -79,23 +107,6 @@ h2 {
 
 .fb-container {
   justify-content: flex-end;
-}
-
-/* Landing */
-#landing {
-  background-image: url("assets/landing.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-}
-
-.landing-body {
-  padding: 150px 10px 200px 10px;
-}
-
-.landing-text {
-  color: white;
-  line-height: 0.5em;
 }
 
 .section-header {
@@ -116,7 +127,7 @@ h2 {
   height: 550px;
 }
 
-.footer {
+#footer {
   padding: 25px;
 }
 
