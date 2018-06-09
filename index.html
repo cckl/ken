@@ -20,7 +20,6 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="#">Ken's Shine
-      <img src="assets/logo.png" width="50" height="50" alt="svg-shoe" style="margin-left: 1em" />
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -117,7 +116,7 @@
     </div>
     <div class="subtitle col-xs-10 col-md-8 offset-md-2">
       <p>Planning your next event or looking to book an individual shoe shining?</p>
-      <p>Get in touch with Ken today.</p>
+      <p>Get in touch with Ken today by giving him a call directly at <a href="tel:+1-832-894-2821"><strong>(832)-894-2821</strong></a>, or by leaving a message below.</p>
     </div>
     <div class="" style="">
       <div class="row">
@@ -125,7 +124,7 @@
           <form id="form" class="container form-block">
             <div class="form-group">
               <label for="inputName">Full name or company name</label>
-              <input type="text" class="form-control" placeholder="Name" name="name">
+              <input required type="text" class="form-control" placeholder="Name" name="name">
             </div>
             <div class="form-group">
               <label for="inputService">Service type</label>
@@ -141,16 +140,16 @@
             </div>
             <div class="form-group">
               <label for="inputLocation">Address</label>
-              <input type="text" class="form-control" placeholder="Address" name="address">
+              <input required type="text" class="form-control" placeholder="Address" name="address">
             </div>
             <div class="form-group">
               <label for="inputPhone">Contact number</label>
-              <input type="text" class="form-control" placeholder="Phone number" name="phoneNumber">
+              <input required type="text" class="form-control" placeholder="(832)-894-2821" name="phoneNumber">
             </div>
             <div class="form-group">
               <label for="inputMessage">Message
                 <small id="message" class="form-text text-muted">Leave a note describing your event or services needed and Ken will get back to you as soon as possible.</small></label>
-              <textarea name="message" class="form-control" placeholder="Hello Ken, I'd like to have an event on August 20th." rows="5"></textarea>
+              <textarea required name="message" class="form-control" placeholder="Hello Ken, I'd like to have an event on August 20th." rows="5"></textarea>
             </div>
             <div class="text-center" style="margin-bottom: 1em">
               <button class="btn btn-secondary" href="#">Send</button>
