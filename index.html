@@ -24,7 +24,7 @@
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="collapse navbar-collapse text-right" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto justify-text-between">
         <li class="nav-item active">
           <a class="nav-link" href="#">Home</a>
@@ -144,7 +144,7 @@
             </div>
             <div class="form-group">
               <label for="inputPhone">Contact number</label>
-              <input required type="text" class="form-control" placeholder="(832)-894-2821" name="phoneNumber">
+              <input required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" type="tel" class="form-control" placeholder="Please include your area code in the format xxx-xxx-xxxx" name="phoneNumber">
             </div>
             <div class="form-group">
               <label for="inputMessage">Message
@@ -152,7 +152,7 @@
               <textarea required name="message" class="form-control" placeholder="Hello Ken, I'd like to have an event on August 20th." rows="5"></textarea>
             </div>
             <div class="text-center" style="margin-bottom: 1em">
-              <button class="btn btn-secondary" href="#">Send</button>
+              <button id="send" class="btn btn-secondary" href="#">Send</button>
             </div>
           </form>
         </div>
@@ -163,7 +163,10 @@
   </section>
   <section id="footer">
     <footer>
-      <a style="color: grey" href="#landing"><h3 class="text-center">Back to top</h3></a>
+      <a style="color: white" href="#landing"><h3 class="text-center">Back to top</h3></a>
+      <p class="text-center">© <script type="text/javascript">
+        document.write(new Date().getFullYear());
+      </script> Ken's Shine</p>
     </footer>
   </section>
 </body>
