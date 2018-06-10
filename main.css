@@ -81,9 +81,9 @@ h2 {
 .navbar {
   padding: 1em 2.5em;
   background-color: transparent !important;
-  float: left; /* doesnt matter if left or right; the point is to make position "absolute" */
+  position: absolute;
   width: 100%;
-*}
+}
 
 .navbar-brand {
   font: 2em Playfair Display SC, serif;
@@ -95,7 +95,7 @@ h2 {
 }
 
 .nav-item {
-  margin-left: 1em;
+  margin-right: 1em;
 }
 
 /* Testimonials */
@@ -127,7 +127,9 @@ h2 {
 }
 
 #footer {
-  padding: 25px;
+  padding: 1em;
+  background-color: #3e3e3e;
+  color: white;
 }
 
 .form-group {
