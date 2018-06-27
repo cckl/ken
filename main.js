@@ -1,22 +1,20 @@
-const frm = $('#form')
-// const URL = "http://localhost:3000"
-const URL = "https://fbr92qejr8.execute-api.us-west-1.amazonaws.com/dev"
+// const URL = "https://fbr92qejr8.execute-api.us-west-1.amazonaws.com/dev"
+const URL = "http://localhost:3000"
 
-// function fun(item1, item) {
-//   console.log(item1.price)
-// }
-
-frm.on('submit', function(e) {
-  e.preventDefault()
-  $.ajax({
-    type: 'POST',
-    url: URL + '/users',
-    data: frm.serialize(),
-    success: function(res) {
-      console.log('succ', res)
-    },
-    error: function(error) {
-      console.log('error', error)
-    },
+$(document).ready(() => {
+  const form = $('#form')
+  form.on('submit', (e) => {
+    e.preventDefault()
+    $.ajax({
+      type: 'POST',
+      url: URL + '/users',
+      data: form.serialize(),
+      success: (res) => {
+        console.log('res', res)
+      },
+      error: (error) => {
+        console.log('error', error)
+      },
+    })
   })
 })
