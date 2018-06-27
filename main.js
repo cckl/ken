@@ -1,4 +1,4 @@
-const URL = 'https://ken-backend.herokuapp.com/'
+const URL = 'https://ken-backend.herokuapp.com'
 // const URL = 'http://localhost:3000'
 
 $(document).ready(() => {
