@@ -1,5 +1,5 @@
-// const URL = "https://fbr92qejr8.execute-api.us-west-1.amazonaws.com/dev"
-const URL = "http://localhost:3000"
+const URL = 'https://ken-backend.herokuapp.com/'
+// const URL = 'http://localhost:3000'
 
 $(document).ready(() => {
   const form = $('#form')
