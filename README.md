@@ -1,3 +1,4 @@
 # ken
-Hello, this is the README.md file for ken.
-More updates and shiny things soon!
+This is the website for Ken, the provider of Houston's finest shoe shining services.
+
+Book a shine at www.kensshine.com!
