@@ -3,6 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Google Tag Manager -->
+  <script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-MFCNS3R');
+  </script>
+  <!-- End Google Tag Manager -->
+
   <script
     src="https://code.jquery.com/jquery-3.3.1.min.js"
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -17,9 +27,58 @@
   <title>Ken's Shine | Houston Events</title>
   <meta name="description" content="Houston's Finest Shoe Shines | Events or Personal">
   <meta name="keywords" content="shoe,shine,events,personal,mobile,dress">
+
+  <!-- Global site tag (gtag.js) - Google Ads: 806174466 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-806174466"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-806174466');
+  </script>
+  <!-- Event snippet for Call - Direct Click conversion page -->
+
+  <!-- <script> -->
+  <!--   function gtag_report_conversion(url) { -->
+  <!--     var callback = function () { -->
+  <!--       if (typeof(url) != 'undefined') { -->
+  <!--         window.location = url; -->
+  <!--       } -->
+  <!--     }; -->
+  <!--     gtag('event', 'conversion', { -->
+  <!--       'send_to': 'AW-806174466/ESp4CMmI6ZABEIL-tIAD', -->
+  <!--       'event_callback': callback -->
+  <!--     }); -->
+  <!--     return false; -->
+  <!--   } -->
+  <!-- </script> -->
+  <!-- <1!-- Event snippet for Inquiry Form conversion page -->
+  <!-- In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. --1> -->
+  <!-- <script> -->
+  <!-- function gtag_report_conversion(url) { -->
+  <!--   var callback = function () { -->
+  <!--     if (typeof(url) != 'undefined') { -->
+  <!--       window.location = url; -->
+  <!--     } -->
+  <!--   }; -->
+  <!--   gtag('event', 'conversion', { -->
+  <!--       'send_to': 'AW-806174466/B_QhCKuY3ZABEIL-tIAD', -->
+  <!--       'event_callback': callback -->
+  <!--   }); -->
+  <!--   return false; -->
+  <!-- } -->
+  <!-- </script> -->
+
+
+
+
 </head>
 
 <body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MFCNS3R"
+                    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="#">Ken's Shine
@@ -122,7 +181,7 @@
     </div>
     <div class="subtitle col-xs-10 col-md-8 offset-md-2">
       <p>Planning your next event or looking to book an individual shoe shining?</p>
-      <p>Get in touch with Ken today by <a href="tel:+1-832-894-2821"><strong>giving him a call directly</strong></a>, or by leaving a message below.</p>
+      <p>Call Ken directly at <a href="tel:+1-832-894-2821"><strong>832-894-2821</strong></a>, or leave a message below.</p>
     </div>
     <div class="" style="">
       <div class="row">
@@ -159,7 +218,7 @@
               <textarea required name="message" class="form-control" placeholder="Hello Ken, I would like to have an event on August 20th from 3pm to 6pm. Would love to have your services there!" rows="5"></textarea>
             </div>
             <div class="text-center" style="margin-bottom: 1em">
-              <button id="send" class="btn btn-secondary" href="#">Send</button>
+              <button id="send" class="btn btn-secondary" href="#" onclick='gtag_report_conversion()'>Send</button>
             </div>
           </form>
         </div>
